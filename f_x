@@ -1,0 +1,11 @@
+#ifndef __F_X_H
+#define __F_X_H
+
+#include "stm32f10x.h"                  // Device header
+
+double Qv_Caculation(double K_st,double A1,double A2,double B1,double B2,double M);
+double Qr_Caculation(double K_sh,double C1,double C2);
+double V_Caculation(double P_in,double Qv,double Qr,double C_p,double dT);
+double f(double K_st,double A1,double A2,double B1,double B2,double M,double K_sh,double C1,double C2,double P_in,double C_p);
+
+#endif
